@@ -2,6 +2,7 @@
 # n**2 solution
 import numpy as np
 from typing import List
+from heapq import heappop, heappush
 def minMeetingRooms( intervals: List[List[int]]) -> int:
     sorted_intervals = sorted(intervals, key= lambda x: x[0])
     n = len(sorted_intervals)
