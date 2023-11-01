@@ -9,6 +9,7 @@ class Solution:
         for times in reversed(range(len(nums) + 1)):
             print(times)
             res.extend(frq[times])
-            if len(res) >= k: return res[:k]
+            if len(res) >= k: 
+                return res[:k]
 
         return res[:k]
